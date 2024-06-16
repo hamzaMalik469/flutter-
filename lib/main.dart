@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_with_firebase/models/user.dart';
+import 'package:project_with_firebase/screens/home/home.dart';
 import 'package:project_with_firebase/screens/wrapper.dart';
 import 'package:project_with_firebase/services/auth.dart';
 import 'package:provider/provider.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialData: UseR(uid: 'Loading...'),
       value: AuthService().user,
       child: const MaterialApp(
-        home: Wrapper(),
+        home: Home(),
       ),
     );
   }
